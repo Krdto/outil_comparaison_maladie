@@ -2,10 +2,22 @@ from flask import Flask, request, render_template, flash, redirect, send_file
 import pandas as pd
 import io
 
+# Initialisation de l'application Flask et configuration du journal de logs
 app = Flask(__name__)
-app.secret_key = 'supersecretkey'
+app.secret_key = 'infokey3'
 
 def process_files(files):
+    """Charge les fichiers Excel et retourne une liste de DataFrames. Concatène les colonnes 'Nom' et 'prénom' si nécessaire,
+         puis récupère les valeurs uniques de la colonne 'Nom et prénom' avant de comparer les valeurs entre les fichiers.
+         Crée une dataframe de résultat, sauvegarde le résultat en objet BytesIO, 
+         l'écris dans un fichier Excel et retourne le fichier.
+
+    Args:
+        files (str): Chemin des fichiers à charger.
+
+    Returns:
+        output (BytesIO): objet BytesIO contenant le fichier Excel de résultat.
+    """
     # Chargement des données
     dataframes = []
     filenames = []
@@ -51,6 +63,12 @@ def process_files(files):
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
+    """Route pour la page d'accueil et pour traiter les fichiers déposés.
+
+    Returns:
+        str: Le rendu HTML de la page.
+    """
+    # Si utilisateur a soumis des fichiers, traiter les fichiers, sinon flash un message d'erreur
     if request.method == 'POST':
         files = request.files.getlist('files[]')
         if not files or len(files) == 0:
