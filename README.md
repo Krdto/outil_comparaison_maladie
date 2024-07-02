@@ -23,12 +23,12 @@ Cette application est une application web basée sur Flask conçue pour comparer
 
 1. Clonez le repository :
     ```bash
-    git clone https://github.com/votre-repo/employee-doc-generator.git
+    git clone https://github.com/Krdto/outil_comparaison_maladie.git
     ```
 
 2. Accédez au répertoire du projet :
     ```bash
-    cd employee-doc-generator
+    cd outil_comparaison_maladie
     ```
 
 3. Installez les packages Python requis :
