@@ -19,6 +19,10 @@ Cette application est une application web basée sur Flask conçue pour comparer
 - openpyxl
 - Bootstrap
 
+## Documentation
+
+Pour accéder à plus de documentation, cliquez sur le lien suivant: `https://krdto.github.io/outil_comparaison_maladie/`
+
 ## Installation
 
 1. Clonez le repository :
