@@ -21,7 +21,7 @@ Cette application est une application web basée sur Flask conçue pour comparer
 
 ## Documentation
 
-Pour accéder à plus de documentation, cliquez sur le lien suivant: `https://krdto.github.io/outil_comparaison_maladie/`
+Pour accéder à plus de documentation, cliquez sur le lien suivant: [http(https://krdto.github.io/outil_comparaison_maladie/](https://krdto.github.io/outil_comparaison_maladie/)
 
 ## Installation
 
@@ -48,7 +48,7 @@ Pour accéder à plus de documentation, cliquez sur le lien suivant: `https://kr
     ```
 
 2. Accédez à l'interface web :
-    Ouvrez un navigateur web et allez à `http://localhost:5000`.
+    Ouvrez un navigateur web et allez à [http://localhost:5000](http://localhost:5000).
 
 3. Déposez les fichiers Excel :
     - Sélectionnez plusieurs fichiers Excel.
