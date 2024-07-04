@@ -7,7 +7,7 @@ app = Flask(__name__)
 app.secret_key = 'infokey3'
 
 def process_files(files):
-    """Charge les fichiers Excel et retourne une liste de DataFrames. TESTOOOOO3
+    """Charge les fichiers Excel et retourne une liste de DataFrames.
     Concatène les colonnes 'Nom' et 'prénom' si nécessaire, puis récupère les valeurs uniques de la colonne 'Nom et prénom' 
     avant de comparer les valeurs entre les fichiers. Crée une dataframe de résultat, sauvegarde le résultat en objet BytesIO, 
     l'écris dans un fichier Excel et retourne le fichier.
