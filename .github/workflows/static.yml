@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - master
-  workflow_dispatch:
+  workflow_dispatch:  # This allows manual triggering from the Actions UI
 
 jobs:
   build:
@@ -27,6 +27,7 @@ jobs:
       - name: Build Sphinx HTML
         run: |
           cd documentation  # Adjust if your Sphinx source is in a different directory
+          make clean  # Optional: Clean the existing build
           make html
 
       - name: Deploy to GitHub Pages
