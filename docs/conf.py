@@ -9,7 +9,7 @@
 import os
 import sys
 
-sys.path.insert(0, os.path.abspath('C:/Users/BENDAVID_E/Desktop/outil_comparaison_maladie'))
+sys.path.insert(0, os.path.abspath('../src'))
 
 project = 'Vérification IJSS'
 copyright = '2024, Elliot Bendavid'

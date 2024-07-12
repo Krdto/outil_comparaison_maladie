@@ -265,7 +265,7 @@
 <span class="kn">import</span> <span class="nn">io</span>
 
 <span class="c1"># Initialisation de l&#39;application Flask et configuration du journal de logs</span>
-<span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+<span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">,</span> <span class="n">template_folder</span><span class="o">=</span><span class="s2">&quot;../templates&quot;</span><span class="p">,</span> <span class="n">static_folder</span><span class="o">=</span><span class="s2">&quot;../static&quot;</span><span class="p">)</span>
 <span class="n">app</span><span class="o">.</span><span class="n">secret_key</span> <span class="o">=</span> <span class="s1">&#39;infokey3&#39;</span>
 
 <div class="viewcode-block" id="process_files">
