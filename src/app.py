@@ -3,7 +3,7 @@ import pandas as pd
 import io
 
 # Initialisation de l'application Flask et configuration du journal de logs
-app = Flask(__name__)
+app = Flask(__name__, template_folder="../templates", static_folder="../static")
 app.secret_key = 'infokey3'
 
 def process_files(files):
