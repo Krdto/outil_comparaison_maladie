@@ -335,7 +335,7 @@
 <span class="sd">    Returns:</span>
 <span class="sd">        str: Le rendu HTML de la page.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="c1"># Si utilisateur a soumis des fichiers, traiter les fichiers, sinon flash un message d&#39;erreur</span>
+    <span class="c1"># Si l&#39;utilisateur a soumis des fichiers, traiter les fichiers, sinon flash un message d&#39;erreur</span>
     <span class="k">if</span> <span class="n">request</span><span class="o">.</span><span class="n">method</span> <span class="o">==</span> <span class="s1">&#39;POST&#39;</span><span class="p">:</span>
         <span class="n">files</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">files</span><span class="o">.</span><span class="n">getlist</span><span class="p">(</span><span class="s1">&#39;files[]&#39;</span><span class="p">)</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="n">files</span> <span class="ow">or</span> <span class="nb">len</span><span class="p">(</span><span class="n">files</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>

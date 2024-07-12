@@ -68,7 +68,7 @@ def index():
     Returns:
         str: Le rendu HTML de la page.
     """
-    # Si utilisateur a soumis des fichiers, traiter les fichiers, sinon flash un message d'erreur
+    # Si l'utilisateur a soumis des fichiers, traiter les fichiers, sinon flash un message d'erreur
     if request.method == 'POST':
         files = request.files.getlist('files[]')
         if not files or len(files) == 0:
